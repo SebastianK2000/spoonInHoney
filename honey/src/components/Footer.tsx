@@ -23,12 +23,12 @@ function Footer() {
             </div>
 
             <div className='main-div-all-social-media-icon'>
-                <a href="https://www.instagram.com/lyzka_w_miodzie?fbclid=IwZXh0bgNhZW0CMTAAAR2SzlUXpkx-XfjJKAizBvWE2-rOOi7DZUuF-x8c7g9uy1oSOKViL4YVwOI_aem_UX31ZNSY0HtT3koJK9xzEQ" target="_blank" rel="noopener noreferrer">
-                    <img className="instagram-footer-style" src={instagram} alt="instagram" />
+                <a className="instagram-footer-style" href="https://www.instagram.com/lyzka_w_miodzie?fbclid=IwZXh0bgNhZW0CMTAAAR2SzlUXpkx-XfjJKAizBvWE2-rOOi7DZUuF-x8c7g9uy1oSOKViL4YVwOI_aem_UX31ZNSY0HtT3koJK9xzEQ" target="_blank" rel="noopener noreferrer">
+                    <img  src={instagram} alt="instagram" />
                 </a>
 
-                <a href="https://www.facebook.com/profile.php?id=61550990205897&sk=about" target="_blank" rel="noopener noreferrer">
-                    <img className="facebook-footer-style" src={facebook} alt="facebook" />
+                <a className="facebook-footer-style" href="https://www.facebook.com/profile.php?id=61550990205897&sk=about" target="_blank" rel="noopener noreferrer">
+                    <img src={facebook} alt="facebook" />
                 </a>
             </div>
 

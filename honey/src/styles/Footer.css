@@ -11,18 +11,18 @@
     justify-content: center;
     align-items: center;
     background-color: #f7f7f7;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .facebook-footer-style {
-    height: 43px;
-    width: 43px;
+    height: 40px;
+    width: 40px;
+    padding: auto;
 }
 
 .instagram-footer-style {
-    height: 49px;
-    width: 49px;
+    height: 46px;
+    width: 46px;
+    padding: auto;
 }
 
 .facebook-footer-style, .instagram-footer-style {
@@ -39,19 +39,21 @@
 {
     height: 30px;
     width: 30px;
-    margin: 0 10px 0 10px;
+    margin: 0 15px 0 15px;
 }
 
-.footer-div-phone-contact, .footer-div-emial-contact {
+.footer-div-phone-contact, .footer-div-emial-contact, .footer-adress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15vh 0 15vh;
+}
+
+.main-div-all-social-media-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 15px 0 15px;
-}
-
-.footer-adress, .footer-div-phone-contact, .footer-div-phone-contact {
-    min-width: 50%;
-    margin: 0 5% 0 5%;
 }
 
 .footer-info-text {
@@ -61,17 +63,36 @@
     margin: 2%;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 1400px) {
 
     .footer-info-text {
         display: block;
         flex-wrap: wrap;
+        font-size: 90%;
     }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 800px) {
+
     .footer-info-text {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        font-size: 80%;
+    }
+
+    .footer-phone-icon, .footer-email-icon {
+        height: 3vh;
+        width: 3vh;
+    }
+
+    .facebook-footer-style, .instagram-footer-style {
+        height: 4vh;
+        width: 4vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .footer-div-phone-contact, .footer-div-emial-contact, .footer-adress { 
+        margin: 1vh;
     }
 }
+

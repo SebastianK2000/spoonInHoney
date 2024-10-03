@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.creme {color: #dfb67e;}
+.honey {color: #e0dd9b;}
+.dark-chockolate {color: #291800;}
+.soft-gray {color: #7a7672;}
+.pure-pink {color: #e2e2e2;}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +15,7 @@
   }
   
   html, body {
-    height: 100%;
     font-family: Playfair Display, serif;
+    overflow-x: hidden;
   }
   

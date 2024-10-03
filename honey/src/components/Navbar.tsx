@@ -24,20 +24,20 @@ const Navbar = () => {
     <nav>
       <ul className='sidebar'>
       <li className='main-close-icon-div' onClick={showSidebar} ><a><img className='main-close-icon' src={close}/></a></li>
-        <li><Link to=""><a className='menu-sidebar-li-element'>Home</a></Link></li>
-        <li><Link to=""><a className='menu-sidebar-li-element'>Menu</a></Link></li>
-        <li><Link to=""><a className='menu-sidebar-li-element'>About Us</a></Link></li>
-        <li><Link to=""><a className='menu-sidebar-li-element'>Careers</a></Link></li>
-        <li><Link to=""><a className='menu-sidebar-li-element'>Contact</a></Link></li>
+        <li><Link to="/home"><a className='menu-sidebar-li-element'>Home</a></Link></li>
+        <li><Link to="/menu"><a className='menu-sidebar-li-element'>Menu</a></Link></li>
+        <li><Link to="/aboutus"><a className='menu-sidebar-li-element'>About Us</a></Link></li>
+        <li><Link to="/careers"><a className='menu-sidebar-li-element'>Careers</a></Link></li>
+        <li><Link to="/contact"><a className='menu-sidebar-li-element'>Contact</a></Link></li>
       </ul>
 
       <ul className='navbar-list-logo'>
-        <li><Link to=""><img className='navbar-logo' src={logo} alt="logo" /></Link></li>
-        <li className='hide-on-mobile'><Link to=""><a>Home</a></Link></li>
-        <li className='hide-on-mobile'><Link to=""><a>Menu</a></Link></li>
-        <li className='hide-on-mobile'><Link to=""><a>About Us</a></Link></li>
-        <li className='hide-on-mobile'><Link to=""><a>Careers</a></Link></li>
-        <li className='hide-on-mobile'><Link to=""><a>Contact</a></Link></li>
+        <li><Link to="/home"><img className='navbar-logo' src={logo} alt="logo" /></Link></li>
+        <li className='hide-on-mobile'><Link to="/home"><a>Home</a></Link></li>
+        <li className='hide-on-mobile'><Link to="/menu"><a>Menu</a></Link></li>
+        <li className='hide-on-mobile'><Link to="/aboutus"><a>About Us</a></Link></li>
+        <li className='hide-on-mobile'><Link to="/careers"><a>Careers</a></Link></li>
+        <li className='hide-on-mobile'><Link to="/contact"><a>Contact</a></Link></li>
         <li className='main-menu-icon-div' onClick={showSidebar} ><a><img className='main-menu-icon' src={menu}/></a></li>
       </ul>
     </nav>

@@ -1,0 +1,4 @@
+.custom-hr {
+    border: none; /* Usuwa domyślne podkreślenie */
+    height: 1px; /* Ustawia wysokość hr */
+  }
