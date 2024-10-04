@@ -1,12 +1,9 @@
 import '../styles/Contact.css';
 import '../index.css';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
 
 function Contact() {
   return (
     <div>
-      <Navbar />
       <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
@@ -201,7 +198,20 @@ function Contact() {
           </div>
         </div>
       </div>
-      <Footer />
+
+      <div style={{ width: "100%" }}>
+  <iframe
+    width="100%"
+    height="400vh"
+    frameBorder="0"
+    scrolling="no"
+    marginHeight="0"
+    marginWidth="0"
+    src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=Brodzi%C5%84skiego%201,%2033-100%20Tarn%C3%B3w+(%C5%81y%C5%BCka%20w%20miodzie)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+  >
+    <a href="https://www.gps.ie/">gps systems</a>
+  </iframe>
+</div>   
     </div>
   );
 }
