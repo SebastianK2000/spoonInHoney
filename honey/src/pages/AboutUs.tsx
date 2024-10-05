@@ -1,90 +1,147 @@
-
-const people = [
-  {
-    name: 'Leslie Alexander',
-    email: 'leslie.alexander@example.com',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    lastSeen: '3h ago',
-    lastSeenDateTime: '2023-01-23T13:23Z',
-  },
-  {
-    name: 'Michael Foster',
-    email: 'michael.foster@example.com',
-    role: 'Co-Founder / CTO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    lastSeen: '3h ago',
-    lastSeenDateTime: '2023-01-23T13:23Z',
-  },
-  {
-    name: 'Dries Vincent',
-    email: 'dries.vincent@example.com',
-    role: 'Business Relations',
-    imageUrl:
-      'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    lastSeen: null,
-  },
-  {
-    name: 'Lindsay Walton',
-    email: 'lindsay.walton@example.com',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    lastSeen: '3h ago',
-    lastSeenDateTime: '2023-01-23T13:23Z',
-  },
-  {
-    name: 'Courtney Henry',
-    email: 'courtney.henry@example.com',
-    role: 'Designer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    lastSeen: '3h ago',
-    lastSeenDateTime: '2023-01-23T13:23Z',
-  },
-  {
-    name: 'Tom Cook',
-    email: 'tom.cook@example.com',
-    role: 'Director of Product',
-    imageUrl:
-      'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    lastSeen: null,
-  },
-]
-
+//import { people } from "../data/AboutData"
+import chef1 from "../assets/chef1.jpg"
+import chef2 from "../assets/chef2.jpg"
+import chef3 from "../assets/chef3.jpg"
+import chef4 from "../assets/chef4.jpg"
+import chef5 from "../assets/chef5.jpg"
+import chef6 from "../assets/chef6.jpg"
 
 function AboutUs() {
   return (
-    <ul role="list" className="divide-y divide-gray-100">
-      {people.map((person) => (
-        <li key={person.email} className="flex justify-between gap-x-6 py-5">
-          <div className="flex min-w-0 gap-x-4">
-            <img alt="" src={person.imageUrl} className="h-12 w-12 flex-none rounded-full bg-gray-50" />
-            <div className="min-w-0 flex-auto">
-              <p className="text-sm font-semibold leading-6 text-gray-900">{person.name}</p>
-              <p className="mt-1 truncate text-xs leading-5 text-gray-500">{person.email}</p>
+
+    <div>
+      {/*About section*/}
+      <div className="bg-white">
+        <div className="relative isolate px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl py-12 sm:py-28 lg:py-36">
+            <div className="text-center">
+              <h1 className="text-balance text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                O nas
+              </h1>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                Witaj w Łyżka w miodzie, miejscu, gdzie pasja do włoskiej kuchni spotyka się z lokalnym klimatem! Nasza restauracja to rodzinny projekt, zrodzony z miłości do włoskich smaków i kultury, którą chcemy dzielić się z naszymi gośćmi.
+                Nasze menu jest hołdem dla tradycyjnej kuchni Włoch – od aromatycznych makaronów, przez świeże owoce morza, po doskonałe pizze wypiekane w piecu. Starannie wybieramy składniki, współpracując z lokalnymi dostawcami, aby każdy posiłek był świeży, pełen smaku i najwyższej jakości.
+                W Łyżka w miodzie stawiamy na prostotę i autentyczność – tak, jak robią to Włosi. Wszystkie nasze dania przygotowywane są z pasją, według sprawdzonych, tradycyjnych przepisów, które przeniosą Was prosto na słoneczne, włoskie wybrzeże.
+                Dbamy o to, aby każda wizyta u nas była nie tylko ucztą dla podniebienia, ale także okazją do spotkań w przyjaznej, rodzinnej atmosferze. Niezależnie od tego, czy przychodzicie na szybki lunch, romantyczną kolację, czy spotkanie w większym gronie – zawsze możecie liczyć na ciepłe powitanie i doskonałe jedzenie.
+                Zapraszamy do Łyżki w miodzie, aby poczuć prawdziwy smak Italii tu, na miejscu!
+              </p>
             </div>
           </div>
-          <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-            <p className="text-sm leading-6 text-gray-900">{person.role}</p>
-            {person.lastSeen ? (
-              <p className="mt-1 text-xs leading-5 text-gray-500">
-                Last seen <time dateTime={person.lastSeenDateTime}>{person.lastSeen}</time>
-              </p>
-            ) : (
-              <div className="mt-1 flex items-center gap-x-1.5">
-                <div className="flex-none rounded-full bg-emerald-500/20 p-1">
-                  <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+        </div>
+      </div>
+        {/*Team section*/}
+        <h1 className="text-balance text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          Oto nasz zespół!
+        </h1>
+        <section className="container mx-auto py-36 px-8">
+          <div className="grid lg:grid-cols-3 gap-6">
+
+            <div className="shadow-lg rounded-lg relative overflow-hidden group">
+              <div className="shadow-lg rounded-lg relative overflow-hidden group">
+                <img className="rounded-lg" src={chef1} alt="Pracownik" />
+                <div className="absolute bg-black bg-opacity-75 -translate-x-full rounded-lg top-0 left-0 w-full h-full flex items-center justify-center group-hover:translate-x-0 duration-300">
+                  <div className="text-center">
+                    <h3 className="text-white text-2xl font-bold mb-2">John Doe</h3>
+                    <h4 className="text-white text-lg font-normal mb-2">Chef</h4>
+                    <ul>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-facebook-f"></i></a></li>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-instagram"></i></a></li>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-x-twitter"></i></a></li>
+                    </ul>
+                  </div>
                 </div>
-                <p className="text-xs leading-5 text-gray-500">Online</p>
               </div>
-            )}
+            </div>
+
+            <div className="shadow-lg rounded-lg relative overflow-hidden group">
+              <div className="shadow-lg rounded-lg relative overflow-hidden group">
+                <img className="rounded-lg" src={chef2} alt="Pracownik" />
+                <div className="absolute bg-black bg-opacity-75 -translate-x-full rounded-lg top-0 left-0 w-full h-full flex items-center justify-center group-hover:translate-x-0 duration-300">
+                  <div className="text-center">
+                    <h3 className="text-white text-2xl font-bold mb-2">John Doe</h3>
+                    <h4 className="text-white text-lg font-normal mb-2">Chef</h4>
+                    <ul>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-facebook-f"></i></a></li>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-instagram"></i></a></li>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-x-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="shadow-lg rounded-lg relative overflow-hidden group">
+              <div className="shadow-lg rounded-lg relative overflow-hidden group">
+                <img className="rounded-lg" src={chef3} alt="Pracownik" />
+                <div className="absolute bg-black bg-opacity-75 -translate-x-full rounded-lg top-0 left-0 w-full h-full flex items-center justify-center group-hover:translate-x-0 duration-300">
+                  <div className="text-center">
+                    <h3 className="text-white text-2xl font-bold mb-2">John Doe</h3>
+                    <h4 className="text-white text-lg font-normal mb-2">Chef</h4>
+                    <ul>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-facebook-f"></i></a></li>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-instagram"></i></a></li>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-x-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="shadow-lg rounded-lg relative overflow-hidden group">
+              <div className="shadow-lg rounded-lg relative overflow-hidden group">
+                <img className="rounded-lg" src={chef4} alt="Pracownik" />
+                <div className="absolute bg-black bg-opacity-75 -translate-x-full rounded-lg top-0 left-0 w-full h-full flex items-center justify-center group-hover:translate-x-0 duration-300">
+                  <div className="text-center">
+                    <h3 className="text-white text-2xl font-bold mb-2">John Doe</h3>
+                    <h4 className="text-white text-lg font-normal mb-2">Chef</h4>
+                    <ul>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-facebook-f"></i></a></li>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-instagram"></i></a></li>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-x-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="shadow-lg rounded-lg relative overflow-hidden group">
+              <div className="shadow-lg rounded-lg relative overflow-hidden group">
+                <img className="rounded-lg" src={chef5} alt="Pracownik" />
+                <div className="absolute bg-black bg-opacity-75 -translate-x-full rounded-lg top-0 left-0 w-full h-full flex items-center justify-center group-hover:translate-x-0 duration-300">
+                  <div className="text-center">
+                    <h3 className="text-white text-2xl font-bold mb-2">John Doe</h3>
+                    <h4 className="text-white text-lg font-normal mb-2">Chef</h4>
+                    <ul>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-facebook-f"></i></a></li>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-instagram"></i></a></li>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-x-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="shadow-lg rounded-lg relative overflow-hidden group">
+              <div className="shadow-lg rounded-lg relative overflow-hidden group">
+                <img className="rounded-lg" src={chef6} alt="Pracownik" />
+                <div className="absolute bg-black bg-opacity-75 -translate-x-full rounded-lg top-0 left-0 w-full h-full flex items-center justify-center group-hover:translate-x-0 duration-300">
+                  <div className="text-center">
+                    <h3 className="text-white text-2xl font-bold mb-2">John Doe</h3>
+                    <h4 className="text-white text-lg font-normal mb-2">Chef</h4>
+                    <ul>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-facebook-f"></i></a></li>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-instagram"></i></a></li>
+                      <li className="inline-block mx-3"><a className="text-white hover:text-creme duration-300" href=""><i className="fa-brands fa-x-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-        </li>
-      ))}
-    </ul>
+        </section>
+    </div>
+    
   )
 }
 
