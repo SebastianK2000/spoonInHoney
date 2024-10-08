@@ -8,6 +8,7 @@ export const JobData = [
         contract: 'Umowa o pracę',
         location: "Tarnów",
         skills: ["Praca zespołowa", "Punktualność", "Komunikatywność"],
+        applyLink: "/apply/1",
     },
     {
         id: 2,
@@ -18,6 +19,7 @@ export const JobData = [
         contract: 'Umowa o pracę',
         location: "Tarnów",
         skills: ["Praca zespołowa", "Doświadczenie", "Włoska kuchnia", "Punktualność"],
+        applyLink: "/apply/2",
       },
       {
         id: 3,
@@ -28,6 +30,7 @@ export const JobData = [
         contract: 'Umowa o pracę',
         location: "Tarnów",
         skills: ["Praca zespołowa", "Doświadczenie", "Punktualność", "Chęć do pracy"],
+        applyLink: "/apply/3",
       },
       {
         id: 4,
@@ -38,5 +41,6 @@ export const JobData = [
         contract: 'Umowa zlecenie',
         location: "Tarnów",
         skills: ["Chęć do pracy", "Punktualność", "Komunikatywność"],
+        applyLink: "/apply/4",
       },
 ];
