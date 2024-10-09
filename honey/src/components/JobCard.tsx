@@ -7,7 +7,7 @@ interface JobCardProps {
   location: string;
   postedOn: string;
   skills: string[];
-  applyLink: string;
+  onApplyClick: () => void;
 }
 
 const JobCard: React.FC<JobCardProps> = ({
@@ -17,7 +17,7 @@ const JobCard: React.FC<JobCardProps> = ({
   location,
   postedOn,
   skills,
-  applyLink,
+  onApplyClick,
 }) => {
   const date1 = dayjs(Date.now());
   const diffInDays = date1.diff(postedOn, 'day');
@@ -37,11 +37,11 @@ const JobCard: React.FC<JobCardProps> = ({
 
         <div className='flex items-center gap-4 sm:mt-4 md:mt-0 flex-wrap'>
           <p className='text-gray-500 text-sm'>Dodane {diffInDays} dni temu</p>
-          <a href={applyLink}>
-            <button className='text-white bg-black-500 hover:bg-gray-500 border border-white px-10 py-2 rounded-md flex-wrap'>
+            <button
+            onClick={onApplyClick}
+            className='text-white bg-black-500 hover:bg-gray-500 border border-white px-10 py-2 rounded-md flex-wrap'>
               Apply
             </button>
-          </a>
         </div>
       </div>
     </div>

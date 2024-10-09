@@ -24,26 +24,22 @@ const slides = [
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Function to go to the next slide
   const nextSlide = () => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
 
-  // Function to go to the previous slide
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
-  // Function to jump to a specific slide
   const goToSlide = (slideIndex: number) => {
     setCurrentIndex(slideIndex);
   };
 
-  // useEffect to automate the slider
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
@@ -133,7 +129,7 @@ const App = () => {
             <img
               src={img5}
               alt="Nasz team"
-              className="w-2/4 my-16 flex justify-center items-center"
+              className="w-full my-16 flex justify-center items-center"
             />
           </div>
         </div>
@@ -147,7 +143,7 @@ const App = () => {
             <img
               src={img4}
               alt="Danie"
-              className="w-2/4 my-16 flex justify-center items-center"
+              className="w-full my-16 flex justify-center items-center"
             />
           </div>
 
