@@ -12,10 +12,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Seville, sans-serif;
   }
   
   html, body {
-    font-family: Playfair Display, serif;
     overflow-x: hidden;
   }
   
