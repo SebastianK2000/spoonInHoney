@@ -19,7 +19,7 @@ function Menu() {
     switch (selectedMenu) {
       case 'Dania główne':
         return dania_glowne;
-      case 'Pizza Biaca':
+      case 'Pizza Biała':
         return pizza_bianca;
       case 'Pizza Czerwona':
         return pizza_red;
