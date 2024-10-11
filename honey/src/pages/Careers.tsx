@@ -76,10 +76,6 @@ const Careers: React.FC = () => {
               <JobForm
                 jobId={selectedJobId!}
                 jobTitle={JobData.find((job) => job.id === selectedJobId)?.title || ''}
-                applicantName=""
-                email=""
-                about=""
-                attachments={[]}
                 onClose={closeModal}
               />
             )}

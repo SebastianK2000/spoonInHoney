@@ -94,17 +94,11 @@ const JobForm: React.FC<JobFormProps> = ({ jobTitle, onClose }) => {
         <div className="flex justify-end mt-4">
           <button
             type="submit"
-            className="text-white border-2 border-white bg-black hover:bg-white hover:text-black hover:border-2 hover:border-black px-4 py-2 rounded-md"
+            className="cursor-pointer text-white border-2 border-white bg-creme hover:bg-creme/80 px-4 py-2 rounded-md"
           >
             Submit Application
           </button>
-          <button
-            onClick={onClose}
-            type="button"
-            className="ml-4 text-white border-2 border-white bg-black hover:bg-white hover:text-black hover:border-2 hover:border-black px-4 py-2 rounded-md"
-          >
-            Close
-          </button>
+
         </div>
       </div>
     </form>
