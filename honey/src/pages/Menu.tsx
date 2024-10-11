@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import alkohole from '../assets/menu/alkohol.jpg';
-import pizza_bianca from '../assets/menu/biala.jpg';
+import pizza_biała from '../assets/menu/biala.jpg';
 import pizza_red from '../assets/menu/czerwona.jpg';
 import dania_glowne from '../assets/menu/glowne.jpg';
 import napoje from '../assets/menu/napoje.jpg';
@@ -20,7 +20,7 @@ function Menu() {
       case 'Dania główne':
         return dania_glowne;
       case 'Pizza Biała':
-        return pizza_bianca;
+        return pizza_biała;
       case 'Pizza Czerwona':
         return pizza_red;
       case 'Przystawki i zupy':
@@ -46,7 +46,7 @@ function Menu() {
     switch (selectedMenu) {
       case 'Dania główne':
         return 'w-screen sm:w-3/5 md:w-2/5 lg:w-2/3 xl:w-2/3';
-      case 'Pizza Biaca':
+      case 'Pizza Biała':
         return 'w-screen sm:w-3/5 md:w-2/5 lg:w-2/3 xl:w-2/3';
       case 'Pizza Czerwona':
         return 'w-screen sm:w-3/5 md:w-2/5 lg:w-2/3 xl:w-2/3';
@@ -82,7 +82,7 @@ function Menu() {
       {/* Menu navbar Section */}
       <div>
         <ul className="flex flex-wrap items-center justify-center text-white">
-          {['Dania główne', 'Pizza Biaca', 'Pizza Czerwona', 'Przystawki i zupy', 'Makarony', 'Salatki i desery', 'Alkohole', 'Wino', 'Napoje', 'Koktajle'].map(
+          {['Dania główne', 'Pizza Biała', 'Pizza Czerwona', 'Przystawki i zupy', 'Makarony', 'Salatki i desery', 'Alkohole', 'Wino', 'Napoje', 'Koktajle'].map(
             (menuItem) => (
               <li
                 key={menuItem}
